@@ -45,7 +45,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'export_decks_to_csv'))
 import export_csv
 
 # More Overview Stats 2
-sys.path.append(os.path.join(os.path.dirname(__file__), 'more_overveiw_stats_legacy'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'more_overview_stats_legacy'))
 import More_Overview_Stats_2
 
 # Night Mode
@@ -73,7 +73,7 @@ sys.path.append(os.path.join(
 import speed_focus_mode
 
 # Stats: Expected number of cards
-sys.path.append(os.path.join(os.path.dirname(__file__), 'expectd_cards_legacy'))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'expected_cards_legacy'))
 import Stats_Expected_number_of_cards
 
 # True Retention by Card Maturity
