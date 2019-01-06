@@ -2,6 +2,10 @@
 	path = addons_by_glutanimate
 	url = https://github.com/glutanimate/anki-addons-misc
 	branch = master
+[submodule "addons_by_ospalh"]
+	path = addons_by_ospalh
+	url = https://github.com/ospalh/anki-addons
+	branch = master
 [submodule "addons_by_sebastiengllmt"]
 	path = addons_by_sebastiengllmt
 	url = https://github.com/SebastienGllmt/Anki-Addons
@@ -10,9 +14,17 @@
 	path = button_colours
 	url = https://github.com/calumks/anki-button-colours
 	branch = master
+[submodule "deck_stats"]
+	path = deck_stats
+	url = https://github.com/calumks/anki-deck-stats
+	branch = master
 [submodule "night_mode"]
 	path = night_mode
 	url = https://github.com/krassowski/Anki-Night-Mode
+	branch = master
+[submodule "progress_for_learned_and_matured_cards"]
+	path = progress_for_learned_and_matured_cards
+	url = https://github.com/matthayes/anki_progress_stats
 	branch = master
 [submodule "review_heatmap"]
 	path = review_heatmap
