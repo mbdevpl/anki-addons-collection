@@ -44,6 +44,10 @@ import Export_Browsers_card_list_contents_to_CSV_file_Enhanced
 sys.path.append(os.path.join(os.path.dirname(__file__), 'export_decks_to_csv'))
 import export_csv
 
+# More Overview Stats 2
+sys.path.append(os.path.join(os.path.dirname(__file__), 'more_overveiw_stats_legacy'))
+import More_Overview_Stats_2
+
 # Night Mode
 if anki_version[:2] >= (2, 1):
     sys.path.append(os.path.join(os.path.dirname(__file__), 'night_mode'))
