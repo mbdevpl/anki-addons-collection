@@ -36,6 +36,10 @@ else:
     sys.path.append(os.path.join(os.path.dirname(__file__), 'night_mode_legacy'))
     import Night_Mode
 
+# Progress Graphs and Stats for Learned and Matured Cards
+sys.path.append(os.path.join(os.path.dirname(__file__), 'progress_for_learned_and_matured_cards'))
+import chart_progress
+
 # Review Heatmap
 if anki_version[:2] >= (2, 1):
     sys.path.append(os.path.join(os.path.dirname(__file__), 'review_heatmap', 'src'))
