@@ -72,6 +72,10 @@ sys.path.append(os.path.join(
     os.path.dirname(__file__), 'addons_by_glutanimate', 'src', 'reviewer_speed_mode'))
 import speed_focus_mode
 
+# Stats: Expected number of cards
+sys.path.append(os.path.join(os.path.dirname(__file__), 'expectd_cards_legacy'))
+import Stats_Expected_number_of_cards
+
 # True Retention by Card Maturity
 sys.path.append(os.path.join(
     os.path.dirname(__file__), 'addons_by_glutanimate', 'src', 'stats_true_retention_extended'))
