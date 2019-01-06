@@ -2,6 +2,10 @@
 	path = addons_by_glutanimate
 	url = https://github.com/glutanimate/anki-addons-misc
 	branch = master
+[submodule "addons_by_sebastiengllmt"]
+	path = addons_by_sebastiengllmt
+	url = https://github.com/SebastienGllmt/Anki-Addons
+	branch = master
 [submodule "button_colours"]
 	path = button_colours
 	url = https://github.com/calumks/anki-button-colours
