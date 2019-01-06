@@ -36,6 +36,13 @@ else:
     sys.path.append(os.path.join(os.path.dirname(__file__), 'night_mode_legacy'))
     import Night_Mode
 
+# Review Heatmap
+if anki_version[:2] >= (2, 1):
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'review_heatmap', 'src'))
+else:
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'review_heatmap_legacy'))
+import review_heatmap
+
 # True Retention by Card Maturity
 sys.path.append(os.path.join(
     os.path.dirname(__file__), 'addons_by_glutanimate', 'src', 'stats_true_retention_extended'))
