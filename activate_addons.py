@@ -28,6 +28,10 @@ else:
 sys.path.append(os.path.join(os.path.dirname(__file__), 'button_colours'))
 import button_colours
 
+# Deck name in title
+sys.path.append(os.path.join(os.path.dirname(__file__), 'addons_by_ospalh'))
+import deck_name_in_title
+
 # Deck Stats
 sys.path.append(os.path.join(os.path.dirname(__file__), 'deck_stats'))
 import deck_stats
