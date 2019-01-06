@@ -2,3 +2,7 @@
 	path = button_colours
 	url = https://github.com/calumks/anki-button-colours
 	branch = master
+[submodule "night_mode"]
+	path = night_mode
+	url = https://github.com/krassowski/Anki-Night-Mode
+	branch = master
