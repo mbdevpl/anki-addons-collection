@@ -36,6 +36,10 @@ import deck_name_in_title
 sys.path.append(os.path.join(os.path.dirname(__file__), 'deck_stats'))
 import deck_stats
 
+# Export Browser's card list contents to CSV file Enhanced
+sys.path.append(os.path.join(os.path.dirname(__file__), 'export_cards_to_csv_legacy'))
+import Export_Browsers_card_list_contents_to_CSV_file_Enhanced
+
 # Night Mode
 if anki_version[:2] >= (2, 1):
     sys.path.append(os.path.join(os.path.dirname(__file__), 'night_mode'))
