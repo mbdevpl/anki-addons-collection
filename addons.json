@@ -1,0 +1,57 @@
+{
+  "Button Colours (Good, Again)": {
+    "path": "button_colours"
+  },
+  "Deck name in title": {
+    "v2.0": {
+      "path": "addons_by_ospalh", "module": "deck_name_in_title"
+    }
+  },
+  "Deck Stats": {
+    "path": "deck_stats"
+  },
+  "Export Browser's card list contents to CSV file Enhanced": {
+    "v2.0": {
+      "path": "export_cards_to_csv_legacy", "module": "Export_Browsers_card_list_contents_to_CSV_file_Enhanced"
+    }
+  },
+  "Export Notes in CSV format": {
+    "v2.0": {
+      "path": "export_decks_to_csv", "module": "export_csv"
+    }
+  },
+  "More Overview Stats 2": {
+    "path": "more_overview_stats_legacy", "module": "More_Overview_Stats_2"
+  },
+  "Night Mode": {
+    "v2.0": {
+      "path": "night_mode_legacy", "module": "Night_Mode"
+    },
+    "": {
+      "path": "night_mode"
+    }
+  },
+  "Progress Graphs and Stats for Learned and Matured Cards": {
+    "path": "progress_for_learned_and_matured_cards", "module": "chart_progress"
+  },
+  "Review Heatmap": {
+    "v2.0": {
+      "path": "review_heatmap_legacy", "module": "review_heatmap"
+    },
+    "v2.1 (broken)": {
+      "path": "review_heatmap/src", "module": "review_heatmap"
+    }
+  },
+  "Speed Focus Mode (auto-alert, auto-reveal, auto-fail)": {
+    "path": "addons_by_glutanimate/src/reviewer_speed_mode", "module": "speed_focus_mode"
+  },
+  "Stats: Expected number of cards": {
+    "path": "expected_cards_legacy", "module": "Stats_Expected_number_of_cards"
+  },
+  "True Retention by Card Maturity": {
+    "path": "addons_by_glutanimate/src/stats_true_retention_extended"
+  },
+  "True Retention graph": {
+    "path": "addons_by_sebastiengllmt/src", "module": "true_retention_graph"
+  }
+}
