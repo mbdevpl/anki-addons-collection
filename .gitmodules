@@ -1,0 +1,4 @@
+[submodule "button_colours"]
+	path = button_colours
+	url = https://github.com/calumks/anki-button-colours
+	branch = master
