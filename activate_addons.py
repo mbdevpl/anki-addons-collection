@@ -43,6 +43,11 @@ else:
     sys.path.append(os.path.join(os.path.dirname(__file__), 'review_heatmap_legacy'))
 import review_heatmap
 
+# Speed Focus Mode (auto-alert, auto-reveal, auto-fail)
+sys.path.append(os.path.join(
+    os.path.dirname(__file__), 'addons_by_glutanimate', 'src', 'reviewer_speed_mode'))
+import speed_focus_mode
+
 # True Retention by Card Maturity
 sys.path.append(os.path.join(
     os.path.dirname(__file__), 'addons_by_glutanimate', 'src', 'stats_true_retention_extended'))
