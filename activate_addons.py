@@ -28,6 +28,10 @@ else:
 sys.path.append(os.path.join(os.path.dirname(__file__), 'button_colours'))
 import button_colours
 
+# Deck Stats
+sys.path.append(os.path.join(os.path.dirname(__file__), 'deck_stats'))
+import deck_stats
+
 # Night Mode
 if anki_version[:2] >= (2, 1):
     sys.path.append(os.path.join(os.path.dirname(__file__), 'night_mode'))
