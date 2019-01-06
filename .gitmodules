@@ -10,6 +10,10 @@
 	path = button_colours
 	url = https://github.com/calumks/anki-button-colours
 	branch = master
+[submodule "deck_stats"]
+	path = deck_stats
+	url = https://github.com/calumks/anki-deck-stats
+	branch = master
 [submodule "night_mode"]
 	path = night_mode
 	url = https://github.com/krassowski/Anki-Night-Mode
