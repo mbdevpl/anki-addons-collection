@@ -1,0 +1,14 @@
+# OS: macOS
+.DS_Store
+
+# OS: Windows
+desktop.ini
+
+# Python
+/build
+/dist
+/.cache
+__pycache__
+*.egg
+*.egg-info
+*.pyc
