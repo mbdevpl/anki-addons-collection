@@ -29,20 +29,23 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'button_colours'))
 import button_colours
 
 # Deck name in title
-sys.path.append(os.path.join(os.path.dirname(__file__), 'addons_by_ospalh'))
-import deck_name_in_title
+if anki_version[:2] <= (2, 0):
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'addons_by_ospalh'))
+    import deck_name_in_title
 
 # Deck Stats
 sys.path.append(os.path.join(os.path.dirname(__file__), 'deck_stats'))
 import deck_stats
 
 # Export Browser's card list contents to CSV file Enhanced
-sys.path.append(os.path.join(os.path.dirname(__file__), 'export_cards_to_csv_legacy'))
-import Export_Browsers_card_list_contents_to_CSV_file_Enhanced
+if anki_version[:2] <= (2, 0):
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'export_cards_to_csv_legacy'))
+    import Export_Browsers_card_list_contents_to_CSV_file_Enhanced
 
 # Export Notes in CSV format
-sys.path.append(os.path.join(os.path.dirname(__file__), 'export_decks_to_csv'))
-import export_csv
+if anki_version[:2] <= (2, 0):
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'export_decks_to_csv'))
+    import export_csv
 
 # More Overview Stats 2
 sys.path.append(os.path.join(os.path.dirname(__file__), 'more_overview_stats_legacy'))
@@ -62,10 +65,11 @@ import chart_progress
 
 # Review Heatmap
 if anki_version[:2] >= (2, 1):
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'review_heatmap', 'src'))
+    # sys.path.append(os.path.join(os.path.dirname(__file__), 'review_heatmap', 'src'))
+    pass
 else:
     sys.path.append(os.path.join(os.path.dirname(__file__), 'review_heatmap_legacy'))
-import review_heatmap
+    import review_heatmap
 
 # Speed Focus Mode (auto-alert, auto-reveal, auto-fail)
 sys.path.append(os.path.join(
