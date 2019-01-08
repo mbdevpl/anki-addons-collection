@@ -4,7 +4,7 @@ import os
 import sys
 
 from anki import version as anki_version
-anki_version = tuple([int(_) for _ in anki_version.split('.')])
+anki_version = tuple([int(_) for _ in anki_version.replace('beta', '.').split('.')])
 
 
 def activate_addon_py2(folder_name, module_name):
