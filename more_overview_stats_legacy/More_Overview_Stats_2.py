@@ -182,12 +182,12 @@ def overview_table(self):
 
     cards = {}
 
-    cards['mature'] = round(mature / int(correction_for_notes))
-    cards['young'] = round(young / int(correction_for_notes))
-    cards['unseen'] = round(unseen / int(correction_for_notes))
-    cards['suspended'] = round(suspended / int(correction_for_notes))
+    cards['mature'] = int(round(mature / int(correction_for_notes)))
+    cards['young'] = int(round(young / int(correction_for_notes)))
+    cards['unseen'] = int(round(unseen / int(correction_for_notes)))
+    cards['suspended'] = int(round(suspended / int(correction_for_notes)))
 
-    cards['total'] = round(total / int(correction_for_notes))
+    cards['total'] = int(round(total / int(correction_for_notes)))
     cards['learned'] = cards['mature'] + cards['young']
     cards['unlearned'] = cards['total'] - cards['learned']
 
