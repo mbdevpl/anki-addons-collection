@@ -14,14 +14,17 @@
 	path = button_colours
 	url = https://github.com/calumks/anki-button-colours
 	branch = master
+	ignore = untracked
 [submodule "deck_stats"]
 	path = deck_stats
 	url = https://github.com/calumks/anki-deck-stats
 	branch = master
+	ignore = untracked
 [submodule "export_decks_to_csv"]
 	path = export_decks_to_csv
 	url = https://gist.github.com/chekunkov/db4ba36e7c5aabf85d49
 	branch = master
+	ignore = untracked
 [submodule "night_mode"]
 	path = night_mode
 	url = https://github.com/krassowski/Anki-Night-Mode
