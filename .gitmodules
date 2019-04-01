@@ -29,6 +29,7 @@
 	path = night_mode
 	url = https://github.com/krassowski/Anki-Night-Mode
 	branch = master
+	ignore = untracked
 [submodule "progress_for_learned_and_matured_cards"]
 	path = progress_for_learned_and_matured_cards
 	url = https://github.com/matthayes/anki_progress_stats
