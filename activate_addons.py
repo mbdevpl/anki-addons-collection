@@ -62,8 +62,14 @@ def activate_default_addons():
     addons = addons_config()
     active_addons_json_path = 'active_addons.json'
     active_addons_json_path = os.path.join(_HERE, active_addons_json_path)
-    with open(active_addons_json_path) as active_addons_json:
-        active_addons = json.load(active_addons_json)
+    try:
+        with open(active_addons_json_path) as active_addons_json:
+            active_addons = json.load(active_addons_json)
+    except IOError:
+        _LOG.exception(
+            'File "active_addons.json" does not exist. Please create it. The simplest way is'
+            ' to copy a provided example file called "active_addons_example.json".')
+        return
     activate_addons(addons, active_addons)
 
 

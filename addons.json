@@ -20,6 +20,9 @@
       "path": "export_decks_to_csv", "module": "export_csv"
     }
   },
+  "Extended Card Stats During Review": {
+    "path": "addons_by_glutanimate/src/reviewer_card_stats"
+  },
   "More Overview Stats 2": {
     "path": "more_overview_stats_legacy", "module": "More_Overview_Stats_2"
   },
