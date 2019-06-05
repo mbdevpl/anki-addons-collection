@@ -22,7 +22,7 @@ Written by various authors, collected by Mateusz Bysiek 2018-2019
 4. Clone this repository there:
 
   ```
-  git clone https://github.com/mbdevpl/anki-addons-collection .
+  git clone --recursive https://github.com/mbdevpl/anki-addons-collection .
   ```
 
 5. See list of available addons:

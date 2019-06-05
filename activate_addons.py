@@ -37,12 +37,17 @@ def activate_addons(addons, active_addons):
     for addon_name in active_addons:
         addon_data = addons[addon_name]
         if 'path' not in addon_data:
-            addon_data = addon_data.get(ANKI_VERSION_TAG, addon_data.get('', None))
-            if addon_data is None:
+            try:
+                addon_data = addon_data.get(ANKI_VERSION_TAG, addon_data[''])
+            except KeyError:
                 _LOG.info('skipping addon "%s" - it is incompatible with Anki %s',
                           addon_name, ANKI_VERSION_TAG)
                 continue
-        activate_addon(addon_data['path'], addon_data.get('module', None))
+        try:
+            activate_addon(addon_data['path'], addon_data.get('module', None))
+        except ImportError:
+            _LOG.exception('skipping addon "%s" - it failed to load', addon_name)
+            continue
         activated += 1
     _LOG.info('Addons summary: %i configured, %i activated, %i incompatible',
               len(addons), activated, len(active_addons) - activated)
