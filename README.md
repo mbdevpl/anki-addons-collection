@@ -9,7 +9,7 @@ Written by various authors, collected by Mateusz Bysiek 2018-2019
 
 2. Check your Anki version. Are you using v2.0 or v2.1?
 
-3. Navigate to Anki addons folder.
+3. Navigate to Anki addons folder. For example:
 
   Linux, Anki v2.0: ```cd "${HOME}/Documents/Anki/addons"```
 
@@ -17,25 +17,25 @@ Written by various authors, collected by Mateusz Bysiek 2018-2019
 
   Mac, Anki v2.0: ```cd "${HOME}/Library/Application Support/Anki2/addons"```
 
-  Mac, Anki v2.1: ```cd "${HOME}/?"```
+  Mac, Anki v2.1: ```cd "${HOME}/Library/Application Support/Anki2/addons21"```
 
 4. Clone this repository there:
 
-  ```
-  git clone --recursive https://github.com/mbdevpl/anki-addons-collection .
-  ```
+    ```
+    git clone --recursive https://github.com/mbdevpl/anki-addons-collection .
+    ```
 
 5. See list of available addons:
 
-  ```
-  python activate_addons.py
-  ```
+    ```
+    python activate_addons.py
+    ```
 
 6. Create a file named `active_addons.json`. You can simply copy an example file and modify it.
 
-   ```
-   cp active_addons_example.json active_addons.json
-   ```
+    ```
+    cp active_addons_example.json active_addons.json
+    ```
 
 7. Launch Anki and your configured addons will be automatically loaded.
 
