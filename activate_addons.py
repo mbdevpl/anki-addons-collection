@@ -37,14 +37,17 @@ def activate_addons(addons, active_addons):
     for addon_name in active_addons:
         addon_data = addons[addon_name]
         if 'path' not in addon_data:
-            try:
-                addon_data = addon_data.get(ANKI_VERSION_TAG, addon_data[''])
-            except KeyError:
-                _LOG.info('skipping addon "%s" - it is incompatible with Anki %s',
-                          addon_name, ANKI_VERSION_TAG)
-                continue
+            for key in (ANKI_VERSION_TAG, u''):
+                try:
+                    addon_data = addon_data[ANKI_VERSION_TAG]
+                    break
+                except KeyError:
+                    continue
         try:
             activate_addon(addon_data['path'], addon_data.get('module', None))
+        except KeyError:
+            _LOG.info('skipping addon "%s" - it is incompatible with Anki %s',
+                      addon_name, repr(ANKI_VERSION_TAG))
         except ImportError:
             _LOG.exception('skipping addon "%s" - it failed to load', addon_name)
             continue
@@ -91,7 +94,7 @@ else:
     try:
         from anki import version as anki_version
         ANKI_VERSION = tuple([int(_) for _ in anki_version.replace('beta', '.').split('.')])
-        ANKI_VERSION_TAG = 'v{}'.format('.'.join([str(_) for _ in ANKI_VERSION[:2]]))
+        ANKI_VERSION_TAG = u'v{}'.format('.'.join([str(_) for _ in ANKI_VERSION[:2]]))
         if ANKI_VERSION[:2] <= (2, 0):
             activate_default_addons()
     except ImportError:
