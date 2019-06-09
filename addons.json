@@ -1,4 +1,7 @@
 {
+  "AnkiConnect": {
+    "path": "anki_connect", "module": "AnkiConnect"
+  },
   "Button Colours (Good, Again)": {
     "path": "button_colours"
   },

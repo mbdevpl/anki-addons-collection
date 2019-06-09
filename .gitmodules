@@ -10,6 +10,10 @@
 	path = addons_by_sebastiengllmt
 	url = https://github.com/SebastienGllmt/Anki-Addons
 	branch = master
+[submodule "anki_connect"]
+	path = anki_connect
+	url = https://github.com/FooSoft/anki-connect
+	branch = master
 [submodule "button_colours"]
 	path = button_colours
 	url = https://github.com/calumks/anki-button-colours
