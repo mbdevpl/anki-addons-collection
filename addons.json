@@ -38,7 +38,7 @@
     }
   },
   "Progress Graphs and Stats for Learned and Matured Cards": {
-    "path": "progress_for_learned_and_matured_cards", "module": "chart_progress"
+    "path": "progress_for_learned_and_matured_cards/progress_for_learned_and_matured_cards", "module": "chart_progress"
   },
   "Review Heatmap": {
     "v2.0": {
