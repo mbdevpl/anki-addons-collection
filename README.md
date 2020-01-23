@@ -1,6 +1,6 @@
 # Anki addons collection
 
-Written by various authors, collected by Mateusz Bysiek 2018-2019
+Written by various authors, collected by Mateusz Bysiek 2018-2020.
 
 
 ## How to use
