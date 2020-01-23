@@ -6,7 +6,7 @@
     "path": "button_colours"
   },
   "Deck name in title": {
-    "v2.0": {
+    "v2.1": {
       "path": "addons_by_ospalh", "module": "deck_name_in_title"
     }
   },
