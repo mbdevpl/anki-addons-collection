@@ -42,7 +42,7 @@
   },
   "Review Heatmap": {
     "v2.0": {
-      "path": "review_heatmap_legacy", "module": "review_heatmap"
+      "path": "review_heatmap_legacy", "module": "review_heatma_old"
     },
     "v2.1": {
       "path": "review_heatmap_legacy", "module": "review_heatmap_v070"
