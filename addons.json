@@ -44,6 +44,9 @@
     "v2.0": {
       "path": "review_heatmap_legacy", "module": "review_heatmap"
     },
+    "v2.1": {
+      "path": "review_heatmap_legacy", "module": "review_heatmap_v070"
+    },
     "v2.1 (broken)": {
       "path": "review_heatmap/src", "module": "review_heatmap"
     }
