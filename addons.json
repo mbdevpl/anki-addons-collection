@@ -63,8 +63,8 @@
     "path": "addons_by_glutanimate/src/stats_true_retention_extended"
   },
   "True Retention graph": {
-    "v2.0": {
-      "path": "addons_by_sebastiengllmt/src", "module": "true_retention_graph"
+    "v2.1": {
+      "path": "addons_by_sebastiengllmt/addons21", "module": "TrueRetentionGraph"
     }
   }
 }
