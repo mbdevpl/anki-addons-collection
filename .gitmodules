@@ -8,7 +8,7 @@
 	branch = master
 [submodule "addons_by_sebastiengllmt"]
 	path = addons_by_sebastiengllmt
-	url = https://github.com/SebastienGllmt/Anki-Addons
+	url = https://github.com/mbdevpl/Anki-Addons-by-SebastienGllmt
 	branch = master
 [submodule "anki_connect"]
 	path = anki_connect
