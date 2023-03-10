@@ -1,6 +1,6 @@
 {
   "AnkiConnect": {
-    "path": "anki_connect", "module": "AnkiConnect"
+    "path": "anki_connect", "module": "plugin"
   },
   "Button Colours (Good, Again)": {
     "path": "button_colours"
@@ -45,9 +45,6 @@
       "path": "review_heatmap_legacy", "module": "review_heatma_old"
     },
     "v2.1": {
-      "path": "review_heatmap_legacy", "module": "review_heatmap_v070"
-    },
-    "v2.1 (broken)": {
       "path": "review_heatmap/src", "module": "review_heatmap"
     }
   },
