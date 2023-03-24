@@ -29,6 +29,9 @@
   "More Overview Stats 2": {
     "path": "more_overview_stats_legacy", "module": "More_Overview_Stats_2"
   },
+  "More Overview Stats 2.1": {
+    "path": ".", "module": "more_overview_stats"
+  },
   "Night Mode": {
     "v2.0": {
       "path": "night_mode_legacy", "module": "Night_Mode"

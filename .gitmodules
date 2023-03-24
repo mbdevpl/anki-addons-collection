@@ -29,6 +29,11 @@
 	url = https://gist.github.com/chekunkov/db4ba36e7c5aabf85d49
 	branch = master
 	ignore = untracked
+[submodule "more_overview_stats"]
+	path = more_overview_stats
+	url = https://github.com/patrick-mahnkopf/Anki_More_Overview_Stats
+	branch = main
+	ignore = untracked
 [submodule "night_mode"]
 	path = night_mode
 	url = https://github.com/krassowski/Anki-Night-Mode
