@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-"""Activate selected addons."""
+"""Activate selected addons.
+
+This code should be compatible with Python 2 and 3.
+"""
 
 import json
 import logging
@@ -10,19 +13,12 @@ import sys
 _LOG = logging.getLogger(__name__)
 _HERE = os.path.dirname(__file__)
 
-# if sys.version_info[:2] > (3, 5):
-#     import pathlib
-#     _HERE = pathlib.Path(__file__).parent
-
 if not _LOG.handlers:
     logging.basicConfig()
     # _LOG.addHandler(logging.StreamHandler(stream=sys.stdout))
 
 
 def activate_addon(folder_name, module_name=None):
-    # if sys.version_info[:2] > (3, 5):
-    #     path = _HERE.joinpath(folder_name)
-    # else:
     path = os.path.join(_HERE, folder_name)
     if module_name is None:
         module_name = os.path.basename(path)
@@ -39,10 +35,10 @@ def activate_addons(addons, active_addons):
         if 'path' not in addon_data:
             for key in (ANKI_VERSION_TAG, u''):
                 try:
-                    addon_data = addon_data[ANKI_VERSION_TAG]
-                    break
+                    addon_data = addon_data[key]
                 except KeyError:
                     continue
+                break
         try:
             activate_addon(addon_data['path'], addon_data.get('module', None))
         except KeyError:
@@ -58,9 +54,10 @@ def activate_addons(addons, active_addons):
 
 def addons_config():
     # type () -> dict
+    """Get the addons configuration from the JSON file."""
     addons_json_path = 'addons.json'
     addons_json_path = os.path.join(_HERE, addons_json_path)
-    with open(addons_json_path) as addons_json:
+    with open(addons_json_path, encoding='utf-8') as addons_json:
         return json.load(addons_json)
 
 
@@ -71,7 +68,7 @@ def activate_default_addons():
     active_addons_json_path = 'active_addons.json'
     active_addons_json_path = os.path.join(_HERE, active_addons_json_path)
     try:
-        with open(active_addons_json_path) as active_addons_json:
+        with open(active_addons_json_path, encoding='utf-8') as active_addons_json:
             active_addons = json.load(active_addons_json)
     except IOError:
         _LOG.exception(
@@ -93,9 +90,10 @@ if __name__ == '__main__':
 else:
     try:
         from anki import version as anki_version
-        ANKI_VERSION = tuple([int(_) for _ in anki_version.replace('beta', '.').split('.')])
-        ANKI_VERSION_TAG = u'v{}'.format('.'.join([str(_) for _ in ANKI_VERSION[:2]]))
-        if ANKI_VERSION[:2] <= (2, 0):
-            activate_default_addons()
     except ImportError:
         _LOG.exception('attempted to activate addons but failed')
+        sys.exit(0)
+    ANKI_VERSION = tuple([int(_) for _ in anki_version.replace('beta', '.').split('.')])
+    ANKI_VERSION_TAG = u'v{}'.format('.'.join([str(_) for _ in ANKI_VERSION[:2]]))
+    if ANKI_VERSION[:2] <= (2, 0):
+        activate_default_addons()
