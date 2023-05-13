@@ -1,6 +1,6 @@
 {
   "AnkiConnect": {
-    "path": "anki_connect", "module": "AnkiConnect"
+    "path": "anki_connect_link"
   },
   "Button Colours (Good, Again)": {
     "path": "button_colours"
@@ -29,6 +29,9 @@
   "More Overview Stats 2": {
     "path": "more_overview_stats_legacy", "module": "More_Overview_Stats_2"
   },
+  "More Overview Stats 2.1": {
+    "path": ".", "module": "more_overview_stats"
+  },
   "Night Mode": {
     "v2.0": {
       "path": "night_mode_legacy", "module": "Night_Mode"
@@ -45,9 +48,6 @@
       "path": "review_heatmap_legacy", "module": "review_heatma_old"
     },
     "v2.1": {
-      "path": "review_heatmap_legacy", "module": "review_heatmap_v070"
-    },
-    "v2.1 (broken)": {
       "path": "review_heatmap/src", "module": "review_heatmap"
     }
   },
